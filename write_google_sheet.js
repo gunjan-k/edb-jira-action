@@ -23,7 +23,7 @@ var JiraClient = require("jira-connector");
 
 
 var jira = new JiraClient({
-    host: jiraApiInfo
+    host: jiraApiInfo,
     basic_auth: {
         email: "gunjan.kumar@enterprisedb.com",
         api_token: jiraApiToken
