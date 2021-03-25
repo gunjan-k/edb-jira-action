@@ -7,11 +7,13 @@ const { google } = require('googleapis');
 // Added the secret in the repository 
 
 const jiraApiToken = process.env['JIRA_API_TOKEN'];
-const jiraURL = process.env['JIRA_BASE_URL'];
+//const jiraURL = process.env['JIRA_BASE_URL'];
+  const jiraApiInfo = process.env['JIRA_BASE_URL'].split(':') // move this utility func into helpe.js
+
 
 var JiraClient = require("jira-connector");
 
-/*var jira = new JiraClient({
+/* var jira = new JiraClient({
     host: "enterprisedb.atlassian.net",
     basic_auth: {
         email: "gunjan.kumar@enterprisedb.com",
@@ -22,7 +24,7 @@ var JiraClient = require("jira-connector");
 
 
 var jira = new JiraClient({
-    host: jiraURL,
+    host: jiraApiInfo[1].substring(2),
     basic_auth: {
         email: "gunjan.kumar@enterprisedb.com",
         api_token: jiraApiToken
