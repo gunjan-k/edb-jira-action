@@ -144,10 +144,10 @@ async function writeData(auth) {
     let values = [
         [
             result.key,
-            result.fields.statuscategorychangedate,
-            result.id,
-            result.self,
-            result.fields.customfield_10500.hasEpicLinkFieldDependency
+            //result.fields.statuscategorychangedate,
+           // result.id,
+            //result.self,
+           // result.fields.customfield_10500.hasEpicLinkFieldDependency
         ],
     ]
     const resource = {
@@ -157,8 +157,8 @@ async function writeData(auth) {
     // This is for printing the variable..
 
     console.log(result);
-    console.log(result.key);
-    console.log(result.fields.statuscategorychangedate);
+    //console.log(result.key);
+    //console.log(result.fields.statuscategorychangedate);
 
     sheets.spreadsheets.values.append({
         spreadsheetId: '1J_B6QUZmg3Zjqi2sw79w4hfYIHwJ7R8oq-ExUPq8Flo',
