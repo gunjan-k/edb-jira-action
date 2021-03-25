@@ -39,8 +39,8 @@ jobs:
 
       - name: Checking the variable is populated or not
         run: |
-          echo "JIRA API TOKEN is ${JIRA_API_TOKEN}" 
-          echo "JIRABASE URL is ${JIRA_BASE_URL}"
+          echo "JIRA API TOKEN is ${env.JIRA_API_TOKEN}" 
+          echo "JIRABASE URL is ${env.JIRA_BASE_URL}"
         
       # Runs a set of commands using the runners shell, Run a multi-line script
       - name: Running the actual script of Nodejs 
