@@ -26,7 +26,8 @@ var JiraClient = require("jira-connector");
 
 var jira = new JiraClient({
     //host: jiraApiInfo,
-    host: "enterprisedb.atlassian.net",
+    //host: "enterprisedb.atlassian.net",
+    host: "edbtest.atlassian.net",
     basic_auth: {
         email: "gunjan.kumar@enterprisedb.com",
         api_token: jiraApiToken
