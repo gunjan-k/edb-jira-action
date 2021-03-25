@@ -1,19 +1,33 @@
+// This is the original script of my own project
+
 const fs = require('fs');
 const readline = require('readline');
 const { google } = require('googleapis');
 
+// Added the secret in the repository 
+
+const jiraApiToken = process.env['JIRA_API_TOKEN'];
+const jiraURL = process.env['JIRA_BASE_URL'];
+
 var JiraClient = require("jira-connector");
 
-var jira = new JiraClient({
+/*var jira = new JiraClient({
     host: "enterprisedb.atlassian.net",
     basic_auth: {
         email: "gunjan.kumar@enterprisedb.com",
         api_token: "n4F11EkcqRv0wOzTogK66457"
     }
 });
+*/
 
 
-
+var jira = new JiraClient({
+    host: jiraURL,
+    basic_auth: {
+        email: "gunjan.kumar@enterprisedb.com",
+        api_token: jiraApiToken
+    }
+});
 
 // If modifying these scopes, delete token.json.
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
