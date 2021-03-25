@@ -7,8 +7,10 @@ const { google } = require('googleapis');
 // Added the secret in the repository 
 
 const jiraApiToken = process.env['JIRA_API_TOKEN'];
-//const jiraApiInfo = process.env['JIRA_BASE_URL'];
+const jiraApiInfo = process.env['JIRA_BASE_URL'];
 
+console.log(jiraApiToken);
+console.log(jiraApiInfo);
 
 var JiraClient = require("jira-connector");
 
