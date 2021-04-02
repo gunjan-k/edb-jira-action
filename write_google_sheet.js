@@ -5,9 +5,9 @@ const readline = require('readline');
 const { google } = require('googleapis');
 
 //Modified as part of JIRA Automation rule (To trigger the webhook)
-const github = require(@actions/github);
-const { client_payload } = github.context.payload
-const { issueId } = client_payload
+const github = require('@actions/github');
+const { client_payload } = github.context.payload;
+const { issueId } = client_payload;
 
 // Added the secret in the repository 
 
