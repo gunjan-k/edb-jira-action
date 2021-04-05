@@ -125,7 +125,7 @@ async function writeData(auth) {
     //Extracting the field from JIRA ticket
 
 
-   let result = await jira.issue.getIssue(
+   let result = await jira.getIssue(
         {
             //issueKey: "NX-2301" }, function(error, issue) {
             //issueKey: "NX-2301"
@@ -135,12 +135,12 @@ async function writeData(auth) {
 
 // Chedcking for the sprint - 
     
-  let sprdata = await jira.issue.getSprintIssues( 
+ /* let sprdata = await jira.issue.getSprintIssues( 
      {
          rapidViewId: "8"
      }
  );
-
+*/
     /* let values = [
         [
             'Chris',
@@ -170,7 +170,7 @@ async function writeData(auth) {
     console.log(result);
     console.log(result.key);
     console.log(result.fields.statuscategorychangedate);
-    console.log(sprdata);
+    //console.log(sprdata);
 
     sheets.spreadsheets.values.append({
         spreadsheetId: '1J_B6QUZmg3Zjqi2sw79w4hfYIHwJ7R8oq-ExUPq8Flo',
