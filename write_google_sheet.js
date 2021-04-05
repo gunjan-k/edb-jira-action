@@ -125,7 +125,7 @@ async function writeData(auth) {
     //Extracting the field from JIRA ticket
 
 
-   let result = await jira.getIssue(
+   let result = await jira.issue.getIssue(
         {
             //issueKey: "NX-2301" }, function(error, issue) {
             //issueKey: "NX-2301"
