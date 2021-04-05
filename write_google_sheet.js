@@ -135,12 +135,12 @@ async function writeData(auth) {
 
 // Chedcking for the sprint - 
     
- /* let sprdata = await jira.issue.getSprintIssues( 
+  let sprdata = await jira.JiraApi.getSprintIssues( 
      {
          rapidViewId: "8"
      }
  );
-*/
+
     /* let values = [
         [
             'Chris',
