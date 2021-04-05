@@ -125,7 +125,7 @@ async function writeData(auth) {
     //Extracting the field from JIRA ticket
 
 
-   let result = await jira.sprintreport.getIssue(
+   let result = await jira.issue.getIssue(
         {
             //issueKey: "NX-2301" }, function(error, issue) {
             //issueKey: "NX-2301"
@@ -135,7 +135,7 @@ async function writeData(auth) {
 
 // Chedcking for the sprint - 
     
-  let sprdata = await jira.issue.getSprintIssues( 
+  let sprdata = await jira.sprintreport.getSprintIssues( 
      {
          rapidViewId: "8"
      }
