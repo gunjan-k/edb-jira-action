@@ -135,7 +135,7 @@ async function writeData(auth) {
 
 // Chedcking for the sprint - 
     
- let sprint_data = await jira.sprint.getSprintIssues( 
+  let sprint_data = await jira.getSprintIssues( 
      {
          rapidViewId: "8"
      }
