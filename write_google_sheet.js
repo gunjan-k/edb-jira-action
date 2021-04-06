@@ -138,6 +138,8 @@ async function writeData(auth) {
    let sprdata = await jira.sprint.getSprintIssues( 
      {
          rapidViewId: "8"
+         catch(e) {
+    console.log('Catch an error: ', e)
      }
  );
 
