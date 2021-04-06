@@ -139,7 +139,7 @@ async function writeData(auth) {
      {
          rapidViewId: "8"
          catch(e) {
-    console.log('Catch an error: ', e)
+    console.log('Catch an error: ', e)}
      }
  );
 
