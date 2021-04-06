@@ -135,12 +135,12 @@ async function writeData(auth) {
 
      // Chedcking for the sprint - 
     
-   let sprdata = await jira.sprint.getSprintIssues( 
+ /*  let sprdata = await jira.sprint.getSprintIssues( 
      {
          rapidViewId: "8"
      }
  );
-
+*/
 
     /* let values = [
         [
@@ -172,7 +172,7 @@ async function writeData(auth) {
     console.log(result);
     console.log(result.key);
     console.log(result.fields.statuscategorychangedate);
-    console.log(sprdata);
+    //console.log(sprdata);
 
     sheets.spreadsheets.values.append({
         spreadsheetId: '1J_B6QUZmg3Zjqi2sw79w4hfYIHwJ7R8oq-ExUPq8Flo',
